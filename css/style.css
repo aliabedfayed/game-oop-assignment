@@ -1,0 +1,239 @@
+/* global styling */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar a {
+    font-family: cursive;
+}
+
+h5 {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+a,
+p {
+    font-family: cursive;
+    text-decoration: none !important;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card p {
+    color: rgb(92, 90, 90) !important;
+    overflow: hidden;
+    height: 40px;
+}
+
+.header {
+    background-image: url(/images/wraper.png);
+    height: 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Start Nav */
+.navbar {
+    background-color: #3a497b !important;
+}
+
+.logo {
+    width: 50px;
+}
+
+/* End Nav */
+
+/*  Games Section Start */
+
+.card-img-top {
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+
+.card-body .card-footer {
+    background-color: rgb(56, 56, 56);
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    font-size: 10px;
+    color: white !important;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.loader {
+    display: block;
+    position: relative;
+    height: 32px;
+    width: 200px;
+    background: #fff;
+    border: 2px solid #fff;
+    color: red;
+    overflow: hidden;
+}
+
+.loader::before {
+    content: "";
+    background: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    animation: loading 10s linear infinite;
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgb(0, 255, 255);
+    mix-blend-mode: difference;
+    animation: percentage 10s linear infinite;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #32383ea1;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes percentage {
+    0% {
+        content: "0%";
+    }
+
+    5% {
+        content: "5%";
+    }
+
+    10% {
+        content: "10%";
+    }
+
+    20% {
+        content: "20%";
+    }
+
+    30% {
+        content: "30%";
+    }
+
+    40% {
+        content: "40%";
+    }
+
+    50% {
+        content: "50%";
+    }
+
+    60% {
+        content: "60%";
+    }
+
+    70% {
+        content: "70%";
+    }
+
+    80% {
+        content: "80%";
+    }
+
+    90% {
+        content: "90%";
+    }
+
+    95% {
+        content: "95%";
+    }
+
+    96% {
+        content: "96%";
+    }
+
+    97% {
+        content: "97%";
+    }
+
+    98% {
+        content: "98%";
+    }
+
+    99% {
+        content: "99%";
+    }
+
+    100% {
+        content: "100%";
+    }
+}
+
+/*  Games Section End  */
+
+/*  Games Details section Start */
+.gameDetails img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.gameDetails a {
+    border: 2px solid rgb(129, 25, 25);
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.gameDetails a:hover {
+    transform: scale3d(1.2, 1.2, 1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+/*  Games Details section end */
